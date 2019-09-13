@@ -10,6 +10,7 @@ app.use(express.json());
 var friends = require("./app/data/friends");
 
 var htmlRoutes = require("./app/routing/htmlRoutes")(app, path);
+var apiRoutes = require("./app/routing/apiRoutes")(app, friends, path);
 
 
 
